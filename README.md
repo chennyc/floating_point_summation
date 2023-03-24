@@ -34,3 +34,5 @@ For a 3 party setting, run the above command from party 3 (X = 3) to party 1 (X 
 `Y=2: Double & w = 16`
 
 `Y=3: Double & w = 32`
+
+For running the experiments using different machines, please update the IP address of each machine in `runtime_config` accordingly.
