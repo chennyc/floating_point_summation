@@ -10,7 +10,7 @@ The full implementation will be updated by the end of March 2023.
 
 # Docker
 
-The authors currently don't have access to a dev envirments that supports Docker. If a docker is preferred, please use the one provided by (https://github.com/anbaccar/RSS_ring_ppml) as we have the system/library requirments.
+The authors currently don't have access to a dev envirments that supports Docker. If a docker is preferred, please use the one provided by (https://github.com/anbaccar/RSS_ring_ppml) as we have the same system/library requirments.
 
 
 # Compile & Run
