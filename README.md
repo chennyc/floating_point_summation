@@ -13,17 +13,23 @@ The full implementation will be updated by the end of March 2023.
 The authors currently don't have access to a dev envirments that supports Docker. If a docker is preferred, please use the one provided by (https://github.com/anbaccar/RSS_ring_ppml) as we have the same system/library requirments.
 
 
-# Compile & Run
+# Compile 
 
 For compile the binary: 
 
 `make`
 
+& Run
+
 For rerun the experiments listed in the paper:
 
-`bash run.sh X Y`
+Run `bash run.sh 3 Y` in terminals. For executing experiments in a signle machine:
 
-For a 3 party setting, run the above command from party 3 (X = 3) to party 1 (X = 1) sequentially.
+1. Open a terminal, run `bash run.sh 3 Y`
+2. Open the second terminal, run `bash run.sh 2 Y`
+3. Open the third terminal. run `bash run.sh 1 Y`
+
+For running experiments in different machines, please specify the IP addess and port of each machine in `runtime-config` and run the above command from party 3 (X = 3) to party 1 (X = 1) on these machines sequentially.
 
 `Y` represents the setting we used in the paper:
 
