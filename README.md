@@ -19,15 +19,13 @@ For compile the binary:
 
 `make`
 
-& Run
+# Run
 
-For rerun the experiments listed in the paper:
-
-Run `bash run.sh 3 Y` in terminals. For executing experiments in a signle machine:
+For rerun the experiments listed in the paper in a signle machine:
 
 1. Open a terminal, run `bash run.sh 3 Y`
-2. Open the second terminal, run `bash run.sh 2 Y`
-3. Open the third terminal. run `bash run.sh 1 Y`
+2. Open another terminal, run `bash run.sh 2 Y`
+3. Open one more terminal, run `bash run.sh 1 Y`
 
 For running experiments in different machines, please specify the IP addess and port of each machine in `runtime-config` and run the above command from party 3 (X = 3) to party 1 (X = 1) on these machines sequentially.
 
