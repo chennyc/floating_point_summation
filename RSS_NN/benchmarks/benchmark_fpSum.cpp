@@ -229,7 +229,7 @@ delete[] x[i][j];
   gettimeofday(&end, NULL);
   timer = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;
   printf("runtime for fpSum with data size %d (m=%d, e=%d, w=%d) = %.6lf ms\n", batch_size, m, e, w, (double)(timer * 0.001) / rep);
-  printf("runtime for FL2SA = %.6lf ms\n", (double)(timer - (timers[4] - timers[5]) * 0.001) / rep);
+  printf("runtime for FL2SA = %.6lf ms\n", (double)(timer * 0.001 - (timers[4] + timers[5]) * 0.001) / rep);
   printf("runtime for superSum = %.6lf ms\n", (double)(timers[4] * 0.001) / rep);
   printf("runtime for SA2FL = %.6lf ms\n", (double)(timers[5] * 0.001) / rep);
 
